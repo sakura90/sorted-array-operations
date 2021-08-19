@@ -1,15 +1,15 @@
-<p align="center"><a href="https://github.com/sakura90/sorted-array-operations"><img src="https://sakura90.github.io/moduleLogo.png" height="60"/></a></p>
+<p align="center"><a href="https://github.com/sakura90/sorted-array-operations"><img src="https://sakura90.github.io/moduleLogo.png" height="180"/></a></p>
 <h1 align="center">Sorted Array Operations</h1>
 <p align="center">Sorted array operation module that has a broad operation coverage.</p>
 
 <p align="center">
 	<a href="#"><img src="https://img.shields.io/badge/Unit%20test-passing-brightgreen" height="20"/></a>
-	<a href="#"><img src="https://sakura90.github.io/Size-2.9kB-green" height="20"/></a>
-    <a href="https://twitter.com/intent/tweet?text=Sorted%20array%20operation%20JavaScript%20module&url=https://github.com/sakura90/sorted-array-operations&hashtags=javascript,opensource,js,webdev,developers"><img src="http://randojs.com/images/tweetShield.svg" alt="Tweet" height="20"/></a>
+	<a href="#"><img src="https://img.shields.io/badge/Size-2.9kB-green" height="20"/></a>
 	<a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
+  <a href="https://twitter.com/intent/tweet?text=Sorted%20array%20operation%20JavaScript%20module&url=https://github.com/sakura90/sorted-array-operations&hashtags=javascript,opensource,js,webdev,developers"><img src="http://randojs.com/images/tweetShield.svg" alt="Tweet" height="20"/></a>
 </p><br/><br/>
 
-<p align="center"><img src="https://sakura90.github.io/sorted-array-operations-demo-use.gif" width="100%"/></p><br/>
+<p align="center"><img src="https://sakura90.github.io/sorted-array-operations-demo-use.gif" width="50%"/></p><br/>
 
 ## Overview
 Existing libraries cover non-standard operations or cover the operations partially on sorted arrays.
@@ -39,6 +39,7 @@ CDN
 ```js
 const ops = require('sorted-array-operations');
 
+console.log(ops.union([2, 3, 5, 6], [2, 6, 8])); // [ 2, 3, 5, 6, 8 ]
 console.log(ops.intersection([2, 3, 5, 6], [2, 6, 8])); // [ 2 ]
 console.log(ops.difference([2, 3, 5, 6], [2, 6, 8])); // [ 3, 5 ]
 console.log(ops.symmetric_difference([2, 3, 5, 6], [2, 6, 8])); // [ 3, 5, 8 ]
@@ -63,6 +64,7 @@ function weight_cmp(p1, p2) {
   return p1.weight > p2.weight ? 1 : p1.weight < p2.weight ? -1 : 0;
 }
 
+console.log(ops.union([{weight: 2}, {weight: 3}], [{weight: 3}], weight_cmp)); // [ {weight: 2}, {weight: 3} ]
 console.log(ops.intersection([{weight: 2}, {weight: 3}], [{weight: 3}], weight_cmp)); // [ {weight: 3} ]
 console.log(ops.difference([{weight: 2}, {weight: 3}], [{weight: 3}], weight_cmp)); // [ {weight: 2} ]
 console.log(ops.symmetric_difference([{weight: 2}, {weight: 3}], [{weight: 3},{weight: 4}], weight_cmp)); // [ {weight: 2}, {weight: 4} ]
@@ -86,9 +88,10 @@ console.log(ops.equal_range([{weight: 2}, {weight: 3}], {weight: 2}, weight_cmp)
 
 ## Related libraries
 The library most similar to this library is [sorted-array-functions](https://www.npmjs.com/package/sorted-array-functions).
-This library has the set operations on sorted arrays and follows the way of implementing lower_bound and upper_bound 
-in the standard libraries in C++ and Python.  These 2 differences are the major differences between this library and sorted-array-functions.
+This library has the set operations on sorted arrays and follows the way of implementing `lower_bound` and `upper_bound`
+in the standard libraries in C++ and Python.  These 2 differences are the major differences between this library and 
+[sorted-array-functions](https://www.npmjs.com/package/sorted-array-functions).
 Other related libraries can be found in Google.
 
 ## Contributing
-The sorted array operation library welcomes patches/pulls for features and bugfixes.  Please open an issue and send a PR request!
+The sorted array operation library welcomes patches/pulls for features and bug fixes.  Please open an issue and send a PR request!
