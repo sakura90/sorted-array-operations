@@ -1,0 +1,78 @@
+{
+  "name": "sorted-array-operations",
+  "version": "1.0.0",
+  "description": "Broad coverage of sorted array operations",
+  "main": "dist/utils.common.js",
+  "module": "dist/utils.esm.js",
+  "types": "dist/utils.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup --config",
+    "eslint": "eslint \"src/utils.ts\"",
+    "test": "jest",
+    "jsdoc": "echo \"Error: jsdoc error due to TS type handling not being supported yet.\" && exit 1",
+    "prettier": "prettier --write \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakura90/sorted-array-operations.git"
+  },
+  "keywords": [
+    "sorted array",
+    "operations",
+    "commonjs",
+    "ES module",
+    "insert",
+    "remove",
+    "union",
+    "intersection",
+    "difference",
+    "symmetric difference",
+    "inplace merge",
+    "includes",
+    "binary search",
+    "lower bound",
+    "upper bound",
+    "bisect left",
+    "bisect right",
+    "equal range",
+    "merge"
+  ],
+  "author": "Patrick Chan",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sakura90/sorted-array-operations/issues"
+  },
+  "homepage": "https://github.com/sakura90/sorted-array-operations#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.32",
+    "@types/source-map": "^0.5.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "jsdoc": "^3.6.7",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "source-map": "^0.7.3",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

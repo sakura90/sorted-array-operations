@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "declaration": true, /* For generating .d.ts file while building the module files */
+    "removeComments": true,
+    "esModuleInterop": true, /* For preventing a warning message from being displayed while running the test code */
+  },
+  "include": ["src/**/*.ts"], /* For running the test code */
+  "exclude": ["src/**/*.spec.ts"] /* For excluding the test file in the module while building the module files */
+}
