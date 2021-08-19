@@ -91,7 +91,7 @@ The library most similar to this library is [sorted-array-functions](https://www
 This library has the set operations on sorted arrays and follows the way of implementing `lower_bound` and `upper_bound`
 in the standard libraries in C++ and Python.  These 2 differences are the major differences between this library and 
 [sorted-array-functions](https://www.npmjs.com/package/sorted-array-functions).
-Other related libraries can be found in Google.
+Other related libraries can be found in Google search.
 
 ## Contributing
 The sorted array operation library welcomes patches/pulls for features and bug fixes.  Please open an issue and send a PR request!
